@@ -5,7 +5,7 @@
       "name": "Deno",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceFolder}",
+      "cwd": "${workspaceFolder}/${relativeFileDirname}",
       "runtimeExecutable": "deno",
       "runtimeArgs": ["run", "--inspect-brk", "-A", "${file}"],
       "attachSimplePort": 9229

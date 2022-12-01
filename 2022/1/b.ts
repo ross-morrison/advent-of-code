@@ -1,4 +1,4 @@
-const input = Deno.readTextFileSync("2022/1/input-a.txt");
+const input = Deno.readTextFileSync("input-a.txt");
 
 const totals = input.split("\n\n").map((elf) => {
     return elf.split("\n").reduce((acc, val) => acc + parseInt(val), 0);
@@ -6,5 +6,3 @@ const totals = input.split("\n\n").map((elf) => {
 
 const answer = totals[0] + totals[1] + totals[2];
 console.log(answer);
-
-Deno.exit(0);
