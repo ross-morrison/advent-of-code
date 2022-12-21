@@ -10,11 +10,7 @@ const solve = (input: string) => {
   for (const entry of entries) {
     // Move the number + or minus its value in the array
     const index = array.indexOf(entry);
-    let newIndex = (index + entry.value) % (array.length - 1);
-
-    if (newIndex === 0) {
-      newIndex = array.length;
-    }
+    const newIndex = (index + entry.value) % (array.length - 1);
 
     array.splice(index, 1);
     array.splice(newIndex, 0, entry);
